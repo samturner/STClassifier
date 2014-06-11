@@ -18,7 +18,7 @@ class STClassifier<classType> {
     var trainingSet = STClassifierClass[]()
     
     // Given some object, classify it based on the training set
-    func classify(c:STClassifierClass) -> String {
+    func classify(c:STClassifierClass, n: Int) -> String {
         var vectors = Array<Double>[]()     // A list of all the vectors
         
         // Build vectors
@@ -28,7 +28,7 @@ class STClassifier<classType> {
         
         // Find closest neighbours
         var testVect = [24.0, 11.0]
-        var closest:Array<Dictionary<String, Any>> = getClosestNeighbours(2, vectors: vectors, tVect: c.getVector())
+        var closest:Array<Dictionary<String, Any>> = getClosestNeighbours(n, vectors: vectors, tVect: c.getVector())
         
         return getClassificationFromClosestVectors(closest)
     }

@@ -2,7 +2,7 @@
 
 STClassifier is an implementation of [K Nearest Neighbour](http://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) in Swift. 
 
-**This is still pretty rough and a testing framework needs to be written!**
+**This is still pretty rough - it needs more error checking, comments, and a testing framework needs to be written!**
 
 ### Getting Started
 
