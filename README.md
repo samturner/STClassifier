@@ -1,6 +1,6 @@
 # STClassifier
 
-STClassifier is an implementation of [K Nearest Neighbour](http://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) in Swift. 
+STClassifier is an implementation of [K Nearest Neighbour](http://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) written in Swift. 
 
 **This is still pretty rough - it needs more error checking, comments, and a testing framework needs to be written!**
 
@@ -10,7 +10,7 @@ Simply download the zip file and copy `STClassifier.swift` into your project and
 
 ### Usage
 
-After you've imported the `STClassifier.swift` into your projects, you'll need to do a few things to get going:
+After you've imported `STClassifier.swift` into your project, you'll need to do a few things to get going:
 
 1. The class you want to be able to classify must conform to the `STClassifierClass` protocol. It must have `type` as a class variable and it must implement the `getVector() -> Array<Double>` method.
 
