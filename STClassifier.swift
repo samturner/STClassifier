@@ -27,7 +27,6 @@ class STClassifier<classType> {
         }
         
         // Find closest neighbours
-        var testVect = [24.0, 11.0]
         var closest:Array<Dictionary<String, Any>> = getClosestNeighbours(n, vectors: vectors, tVect: c.getVector())
         
         return getClassificationFromClosestVectors(closest)
@@ -44,8 +43,6 @@ class STClassifier<classType> {
         
         for v in vectors {
             // Get the distance between this and the test vector
-            v
-            tVect
             var dist = getDistance(tVect, v2: v)
             
             var l : Dictionary<String,Any> = [
